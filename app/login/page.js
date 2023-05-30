@@ -1,9 +1,9 @@
-import LoginContainer from "@/container/Login/login";
-import UserList from "@/container/User";
+import LoginContainer from "@/container/Login/index";
+
 
 export default function Login() {
   return (
-    <div>
+    <div >
       <LoginContainer />
       
     </div>

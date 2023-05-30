@@ -1,14 +1,16 @@
 "use client";
 import { useEffect, useState } from "react";
 // import { useSession, SessionProvider } from "next-auth/react";
-import usersData from "@/mockdata/users.js";
+// import usersData from "@/mockdata/users.js";
 
 function UserList() {
   //   const [session] = useSession();
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    setUsers(usersData);
+    fetch("http://localhost:3004/users")
+      .then((response) => response.json())
+      .then((data) => setUsers(data));
   }, []);
 
   const handleDeleteUser = (userId) => {
@@ -55,13 +57,4 @@ function UserList() {
   );
 }
 
-function UserListPage() {
-  return (
-    <UserList />
-    // <SessionProvider>
-    //   <UserList />
-    // </SessionProvider>
-  );
-}
-
-export default UserListPage;
+export default UserList;

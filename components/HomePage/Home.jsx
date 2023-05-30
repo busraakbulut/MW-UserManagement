@@ -9,8 +9,10 @@ function Home() {
   return (
     <div>
       <BackgroundImage>
-        <Header />
-        <HomeContent />
+        <>
+          <Header />
+          <HomeContent />
+        </>
       </BackgroundImage>
     </div>
   );

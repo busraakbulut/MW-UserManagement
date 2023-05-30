@@ -1,3 +1,4 @@
+import Header from '@/components/HomePage/Header/Header';
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -9,7 +10,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body><main>{children}</main></body>
+      <body><Header />
+        <main>{children}</main></body>
     </html>
   )
 }

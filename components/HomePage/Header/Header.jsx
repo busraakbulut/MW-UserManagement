@@ -14,8 +14,8 @@ function Header() {
             </span>
           </a>
         </div>
-        <div className="flex w-full md:w-2/4 md:justify-end m-6">
-          <ul className="flex flex-wrap justify-end md:justify-start md:space-x-4">
+        <div className="flex w-full md:w-2/4 md:justify-end m-6 ">
+          <ul className="flex flex-wrap justify-end md:justify-start md:space-x-4 px-10">
             <li className="w-auto px-1">
               <a
                 href="/"
