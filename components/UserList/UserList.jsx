@@ -1,60 +1,73 @@
 "use client";
-import { useEffect, useState } from "react";
-// import { useSession, SessionProvider } from "next-auth/react";
-// import usersData from "@/mockdata/users.js";
-
-function UserList() {
-  //   const [session] = useSession();
-  const [users, setUsers] = useState([]);
+import React, { useState, useEffect } from "react";
+import UserCard from "./UserCard";
+import { useRouter } from "next/navigation";
+const UserList = () => {
+  const [userCards, setUserCards] = useState([]);
+  const router = useRouter();
 
   useEffect(() => {
     fetch("http://localhost:3004/users")
       .then((response) => response.json())
-      .then((data) => setUsers(data));
+      .then((data) => {
+        console.log(data);
+        setUserCards(data);
+      })
+      .catch((error) => console.log(error));
   }, []);
 
-  const handleDeleteUser = (userId) => {
-    const updatedUsers = users.filter((user) => user.id !== userId);
-    setUsers(updatedUsers);
+  const handleDeleteUser = async (userId) => {
+    try {
+      const response = await fetch(`http://localhost:3004/users/${userId}`, {
+        method: "DELETE",
+      });
+
+      if (response.ok) {
+        const updatedUsers = userCards.filter((user) => user.id !== userId);
+        setUserCards(updatedUsers);
+      } else {
+        console.log("Error deleting user");
+      }
+    } catch (error) {
+      console.log("Server error", error);
+    }
   };
 
-  //   if (!session) {
-  //     return <p>Please log in to view the user list.</p>;
-  //   }
+  const handleEditUser = (userId) => {
+    router.push(`/update?id=${userId}`);
+  };
 
   return (
-    <div>
-      <h1>User List</h1>
-      <table className="table-auto">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Role</th>
-            <th>Status</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {users.map((user) => (
-            <tr key={user.id}>
-              <td>{user.name}</td>
-              <td>{user.email}</td>
-              <td>{user.phone}</td>
-              <td>{user.role}</td>
-              <td>{user.status}</td>
-              <td>
-                <button onClick={() => handleDeleteUser(user.id)}>
-                  Delete
-                </button>
-              </td>
+    <div className="flex flex-col items-center justify-center min-h-screen">
+      <h1 className="text-3xl">User List</h1>
+      <div className="overflow-x-auto text-gray-700 p-3">
+        <table className="items-center bg-white w-full border-collapse table-header-group">
+          <thead className="text-sm uppercase">
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Delete</th>
+              <th>Edit</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody className="items-center text-center gap-4 table-row-group">
+            {userCards.map((user) => (
+              <UserCard
+                key={user.id}
+                user={user}
+                index={userCards.indexOf(user)}
+                handleDeleteUser={handleDeleteUser}
+                handleEditUser={handleEditUser}
+              />
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
-}
+};
 
 export default UserList;

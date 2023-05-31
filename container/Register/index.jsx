@@ -5,8 +5,9 @@ import React from "react";
 function RegisterContainer() {
   return (
     <div>
-      
-      <Registration />
+      <>
+        <Registration />
+      </>
     </div>
   );
 }

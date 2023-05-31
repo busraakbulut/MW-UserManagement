@@ -17,7 +17,7 @@ function HomeContent() {
             </Link>
             <Link href="/login">
               <div className="inline-flex items-center px-5 py-2 m-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                Log in to your account
+                Login to your account
               </div>
             </Link>
           </div>

@@ -3,9 +3,10 @@ const users = [
     id: 1,
     name: "John Doe",
     email: "john@example.com",
+    password: "123890",
     phone: "1234567890",
     role: "user",
-    status: "active"
+    status: "active",
   },
   {
     id: 2,
@@ -13,23 +14,34 @@ const users = [
     email: "Dude@example.com",
     phone: "9876543210",
     role: "admin",
-    status: "inactive"
+    status: "inactive",
   },
   {
     id: 3,
     name: "Jane Smith",
     email: "jane@example.com",
+    password: "123890",
     phone: "9876543210",
     role: "admin",
-    status: "inactive"
+    status: "inactive",
   },
   {
     id: 4,
     name: "Mary Smith",
     email: "Mary@example.com",
+    password: "123890",
     phone: "9876543210",
     role: "admin",
-    status: "inactive"
-  }
-]
+    status: "inactive",
+  },
+  {
+    id: 5,
+    name: "Jane Doe",
+    email: "Jane@example.com",
+    password: "123890",
+    phone: "9876543210",
+    role: "admin",
+    status: "active",
+  },
+];
 export default users;

@@ -5,9 +5,6 @@ import React from "react";
 function LoginContainer() {
   return (
     <div>
-      {/* <BackgroundImage>
-        <Login />
-      </BackgroundImage> */}
       <Login />
     </div>
   );

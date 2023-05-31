@@ -5,11 +5,11 @@ import logo from "@/public/assets/malwation-logo-2.png";
 function Header() {
   return (
     <div>
-      <nav className="flex bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
+      <nav className="flex bg-white fixed w-full  top-0 left-0 border-b border-gray-200">
         <div className="w-full md:w-1/4 max-w-screen-xl justify-between mx-auto p-5 pl-5">
           <a href="/" className="flex items-center">
             <Image src={logo} width={40} height={40} alt="Malwation logo" />
-            <span className="self-center text-xl font-semibold text-blue-500 hover:text-blue-800">
+            <span className=" text-xl font-semibold text-blue-500 hover:text-blue-800">
               MALWATION
             </span>
           </a>

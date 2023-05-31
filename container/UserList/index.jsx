@@ -1,10 +1,8 @@
-import UserList from "@/components/UserList/UserList";
-import React from "react";
-
+import UserDashboard from "@/components/UserList/UserDashboard";
 function UserListContainer() {
   return (
     <div>
-      <UserList />
+      <UserDashboard />
     </div>
   );
 }

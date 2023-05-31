@@ -4,6 +4,7 @@
       "id": 1,
       "name": "John Doe",
       "email": "john@example.com",
+      "password": "123890",
       "phone": "1234567890",
       "role": "user",
       "status": "active"
@@ -20,6 +21,7 @@
       "id": 3,
       "name": "Jane Smith",
       "email": "jane@example.com",
+      "password": "123890",
       "phone": "9876543210",
       "role": "admin",
       "status": "inactive"
@@ -28,18 +30,19 @@
       "id": 4,
       "name": "Mary Smith",
       "email": "Mary@example.com",
+      "password": "123890",
       "phone": "9876543210",
       "role": "admin",
       "status": "inactive"
     },
     {
-      "id": "525690c2-f2bf-45dd-9cf2-453e08637614",
-      "name": "abcd",
-      "email": "ab@ab",
-      "password": "abab",
-      "phone": "",
-      "role": "user",
-      "status": true
+      "id": 5,
+      "name": "Jane Doe",
+      "email": "Jane@example.com",
+      "password": "123890",
+      "phone": "9876543210",
+      "role": "admin",
+      "status": "active"
     }
   ]
 }

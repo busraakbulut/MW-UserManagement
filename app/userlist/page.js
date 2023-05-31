@@ -1,8 +1,8 @@
 import React from "react";
-import UserListContainer from "@/container/User";
+import UserListContainer from "@/container/UserList";
 function UserList() {
   return (
-    <div>
+    <div className="bg" >
       <UserListContainer />
     </div>
   );

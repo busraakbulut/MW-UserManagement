@@ -1,10 +1,8 @@
 "use client";
-
 import React from "react";
 import { useRouter } from "next/navigation";
 import bgimg from "@/public/assets/bg.png";
 import Image from "next/image";
-import styles from "@/components/HomePage/bgImg/bg.module.css";
 
 function BackgroundImage({ children }) {
   const router = useRouter();
