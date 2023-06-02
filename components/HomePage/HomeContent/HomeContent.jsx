@@ -4,10 +4,10 @@ import Link from "next/link";
 function HomeContent() {
   return (
     <div>
-      <div className=" justify-center items-center h-screen  ">
+      <div className="justify-center">
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">
               Do you have an account?
             </h5>
             <Link href="/register">

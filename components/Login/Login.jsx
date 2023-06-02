@@ -32,13 +32,13 @@ const Login = () => {
   return (
     <section>
       <div>
-        <div className="flex flex-col w-3/4 items-center justify-center min-h-screen">
-          <h1 className="text-3xl font-bold mb-4">Login Page</h1>
+        <div className="flex">
           <p className="mb-4">Please login to continue</p>
           <form
             className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
             onSubmit={handleLogin}
           >
+            <h1 className="text-3xl font-semibold mb-6">Login Page</h1>
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2">
                 Email:
@@ -76,7 +76,10 @@ const Login = () => {
                   />
                 </div>
                 <div className="text-sm ml-3 ">
-                  <label for="remember" className="font-medium text-gray-900 ">
+                  <label
+                    htmlFor="remember"
+                    className="font-medium text-gray-900 "
+                  >
                     Remember me
                   </label>
                 </div>
@@ -101,7 +104,7 @@ const Login = () => {
               </a>
             </div>
           </form>
-          <div className="flex flex-col w-1/4 items-center ">
+          <div className="flex  w-3/4 justify-center items-center h-screen">
             <Image src={login} alt="login" />
           </div>
         </div>

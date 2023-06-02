@@ -3,13 +3,7 @@ import Registration from "@/components/Register/Register";
 import React from "react";
 
 function RegisterContainer() {
-  return (
-    <div>
-      <>
-        <Registration />
-      </>
-    </div>
-  );
+  return <Registration />;
 }
 
 export default RegisterContainer;

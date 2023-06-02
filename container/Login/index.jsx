@@ -3,11 +3,7 @@ import Login from "@/components/Login/Login";
 import React from "react";
 
 function LoginContainer() {
-  return (
-    <div>
-      <Login />
-    </div>
-  );
+  return <Login />;
 }
 
 export default LoginContainer;

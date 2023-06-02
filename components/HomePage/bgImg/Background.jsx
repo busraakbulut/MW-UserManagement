@@ -9,7 +9,7 @@ function BackgroundImage({ children }) {
 
   return (
     <div>
-      <div className="absolute top-0 left-0 w-full h-full">
+      <div className="w-full h-full">
         <Image
           src={bgimg}
           alt="bg"

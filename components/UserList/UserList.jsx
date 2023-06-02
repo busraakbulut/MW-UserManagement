@@ -38,9 +38,9 @@ const UserList = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="container mx-auto">
       <h1 className="text-3xl">User List</h1>
-      <div className="overflow-x-auto text-gray-700 p-3">
+      <div className=" text-gray-700 p-3">
         <table className="items-center bg-white w-full border-collapse table-header-group">
           <thead className="text-sm uppercase">
             <tr>

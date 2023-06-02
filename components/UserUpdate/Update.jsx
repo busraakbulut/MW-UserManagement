@@ -1,343 +1,3 @@
-// // "use client";
-// // import React, { useState, useEffect } from "react";
-// // import { useRouter } from "next/navigation";
-
-// // const UserUpdate = ({ id }) => {
-// //   const router = useRouter();
-// //   const [user, setUser] = useState(null);
-
-// //   useEffect(() => {
-// //     const fetchUser = async () => {
-// //       try {
-// //         const response = await fetch(`http://localhost:3004/users/${id}`);
-// //         const data = await response.json();
-// //         setUser(data);
-// //       } catch (error) {
-// //         console.error("Error fetching user:", error);
-// //       }
-// //     };
-
-// //     fetchUser();
-// //   }, [id]);
-
-// //   const handleUpdateUser = async (e) => {
-// //     e.preventDefault();
-
-// //     try {
-// //       const response = await fetch(`http://localhost:3004/users/${id}`, {
-// //         method: "PUT",
-// //         headers: {
-// //           "Content-Type": "application/json",
-// //         },
-// //         body: JSON.stringify(user),
-// //       });
-
-// //       if (response.ok) {
-// //         console.log("User updated successfully");
-// //         router.push("/userlist");
-// //       } else {
-// //         console.error("Error updating user");
-// //       }
-// //     } catch (error) {
-// //       console.error("Error updating user:", error);
-// //     }
-// //   };
-
-// //   if (!user) {
-// //     return <p>Loading...</p>;
-// //   }
-
-// //   return (
-// //     <div className="max-w-md mx-auto mt-8">
-// //       <h1 className="text-2xl font-bold mb-4">User Update</h1>
-// //       <form onSubmit={handleUpdateUser}>
-// //         <div className="mb-4">
-// //           <label className="block mb-2">Name:</label>
-// //           <input
-// //             type="text"
-// //             value={user.name}
-// //             onChange={(e) => setUser({ ...user, name: e.target.value })}
-// //             className="border border-gray-300 px-3 py-2 rounded-md w-full"
-// //           />
-// //         </div>
-// //         <div className="mb-4">
-// //           <label className="block mb-2">Email:</label>
-// //           <input
-// //             type="email"
-// //             value={user.email}
-// //             onChange={(e) => setUser({ ...user, email: e.target.value })}
-// //             className="border border-gray-300 px-3 py-2 rounded-md w-full"
-// //           />
-// //         </div>
-// //         <div className="mb-4">
-// //           <label className="block mb-2">Phone:</label>
-// //           <input
-// //             type="text"
-// //             value={user.phone}
-// //             onChange={(e) => setUser({ ...user, phone: e.target.value })}
-// //             className="border border-gray-300 px-3 py-2 rounded-md w-full"
-// //           />
-// //         </div>
-// //         <div className="mb-4">
-// //           <label className="block mb-2">Role:</label>
-// //           <input
-// //             type="text"
-// //             value={user.role}
-// //             onChange={(e) => setUser({ ...user, role: e.target.value })}
-// //             className="border border-gray-300 px-3 py-2 rounded-md w-full"
-// //           />
-// //         </div>
-// //         <div className="mb-4">
-// //           <label className="block mb-2">Status:</label>
-// //           <input
-// //             type="text"
-// //             value={user.status}
-// //             onChange={(e) => setUser({ ...user, status: e.target.value })}
-// //             className="border border-gray-300 px-3 py-2 rounded-md w-full"
-// //           />
-// //         </div>
-// //         <button
-// //           type="submit"
-// //           className="bg-blue-500 text-white px-4 py-2 rounded-md"
-// //         >
-// //           Update
-// //         </button>
-// //       </form>
-// //     </div>
-// //   );
-// // };
-
-// // export default UserUpdate;
-// // "use client";
-// // import React, { useState, useEffect } from "react";
-// // import { useRouter } from "next/navigation";
-
-// // const UserUpdate = ({ id }) => {
-// //   const router = useRouter();
-// //   const [user, setUser] = useState(null);
-
-// //   useEffect(() => {
-// //     const fetchUser = async () => {
-// //       try {
-// //         const response = await fetch(`http://localhost:3004/users/${id}`);
-// //         const data = await response.json();
-// //         setUser(data);
-// //       } catch (error) {
-// //         console.error("Error fetching user:", error);
-// //       }
-// //     };
-
-// //     fetchUser();
-// //   }, [id]);
-
-// //   const handleUpdateUser = async (e) => {
-// //     e.preventDefault();
-
-// //     try {
-// //       const response = await fetch(`http://localhost:3004/users/${id}`, {
-// //         method: "PUT",
-// //         headers: {
-// //           "Content-Type": "application/json",
-// //         },
-// //         body: JSON.stringify(user),
-// //       });
-
-// //       if (response.ok) {
-// //         console.log("User updated successfully");
-// //         router.push("/userlist");
-// //       } else {
-// //         console.error("Error updating user");
-// //       }
-// //     } catch (error) {
-// //       console.error("Error updating user:", error);
-// //     }
-// //   };
-
-// //   if (!user) {
-// //     return <p>Loading...</p>;
-// //   }
-
-// //   return (
-// //     <div className="max-w-md mx-auto mt-8">
-// //       <h1 className="text-2xl font-bold mb-4">User Update</h1>
-// //       <form onSubmit={handleUpdateUser}>
-// //         <div className="mb-4">
-// //           <label className="block mb-2">Name:</label>
-// //           <input
-// //             type="text"
-// //             value={user.name}
-// //             onChange={(e) => setUser({ ...user, name: e.target.value })}
-// //             className="border border-gray-300 px-3 py-2 rounded-md w-full"
-// //           />
-// //         </div>
-// //         <div className="mb-4">
-// //           <label className="block mb-2">Email:</label>
-// //           <input
-// //             type="email"
-// //             value={user.email}
-// //             onChange={(e) => setUser({ ...user, email: e.target.value })}
-// //             className="border border-gray-300 px-3 py-2 rounded-md w-full"
-// //           />
-// //         </div>
-// //         <div className="mb-4">
-// //           <label className="block mb-2">Phone:</label>
-// //           <input
-// //             type="text"
-// //             value={user.phone}
-// //             onChange={(e) => setUser({ ...user, phone: e.target.value })}
-// //             className="border border-gray-300 px-3 py-2 rounded-md w-full"
-// //           />
-// //         </div>
-// //         <div className="mb-4">
-// //           <label className="block mb-2">Role:</label>
-// //           <input
-// //             type="text"
-// //             value={user.role}
-// //             onChange={(e) => setUser({ ...user, role: e.target.value })}
-// //             className="border border-gray-300 px-3 py-2 rounded-md w-full"
-// //           />
-// //         </div>
-// //         <div className="mb-4">
-// //           <label className="block mb-2">Status:</label>
-// //           <input
-// //             type="text"
-// //             value={user.status}
-// //             onChange={(e) => setUser({ ...user, status: e.target.value })}
-// //             className="border border-gray-300 px-3 py-2 rounded-md w-full"
-// //           />
-// //         </div>
-// //         <button
-// //           type="submit"
-// //           className="bg-blue-500 text-white px-4 py-2 rounded-md"
-// //         >
-// //           Update
-// //         </button>
-// //       </form>
-// //     </div>
-// //   );
-// // };
-
-// // UserUpdate.getInitialProps = ({ query }) => {
-// //   return { id: query.userId };
-// // };
-
-// // export default UserUpdate;
-
-// "use client";
-// import React, { useState, useEffect } from "react";
-// import UserCard from "@/components/UserList/UserCard";
-// import { useRouter } from "next/navigation";
-// const UserUpdate = () => {
-//   const UserUpdate = ({ id }) => {
-//     const router = useRouter();
-//     const [user, setUser] = useState(null);
-
-//     useEffect(() => {
-//       const fetchUser = async () => {
-//         try {
-//           const response = await fetch(`http://localhost:3004/users/${id}`);
-//           const data = await response.json();
-//           setUser(data);
-//         } catch (error) {
-//           console.error("Error fetching user:", error);
-//         }
-//       };
-
-//       fetchUser();
-//     }, [id]);
-
-//     const handleUpdateUser = async (e) => {
-//       e.preventDefault();
-
-//       try {
-//         const response = await fetch(`http://localhost:3004/users/${id}`, {
-//           method: "PUT",
-//           headers: {
-//             "Content-Type": "application/json",
-//           },
-//           body: JSON.stringify(user),
-//         });
-
-//         if (response.ok) {
-//           console.log("User updated successfully");
-//           router.push("/userlist");
-//         } else {
-//           console.error("Error updating user");
-//         }
-//       } catch (error) {
-//         console.error("Error updating user:", error);
-//       }
-//     };
-
-//     if (!user) {
-//       return <p>Loading...</p>;
-//     }
-
-//     return (
-//       <div className="max-w-md mx-auto mt-8">
-//         <h1 className="text-2xl font-bold mb-4">User Update</h1>
-//         <form onSubmit={handleUpdateUser}>
-//           <div className="mb-4">
-//             <label className="block mb-2">Name:</label>
-//             <input
-//               type="text"
-//               value={user.name}
-//               onChange={(e) => setUser({ ...user, name: e.target.value })}
-//               className="border border-gray-300 px-3 py-2 rounded-md w-full"
-//             />
-//           </div>
-//           <div className="mb-4">
-//             <label className="block mb-2">Email:</label>
-//             <input
-//               type="email"
-//               value={user.email}
-//               onChange={(e) => setUser({ ...user, email: e.target.value })}
-//               className="border border-gray-300 px-3 py-2 rounded-md w-full"
-//             />
-//           </div>
-//           <div className="mb-4">
-//             <label className="block mb-2">Phone:</label>
-//             <input
-//               type="text"
-//               value={user.phone}
-//               onChange={(e) => setUser({ ...user, phone: e.target.value })}
-//               className="border border-gray-300 px-3 py-2 rounded-md w-full"
-//             />
-//           </div>
-//           <div className="mb-4">
-//             <label className="block mb-2">Role:</label>
-//             <input
-//               type="text"
-//               value={user.role}
-//               onChange={(e) => setUser({ ...user, role: e.target.value })}
-//               className="border border-gray-300 px-3 py-2 rounded-md w-full"
-//             />
-//           </div>
-//           <div className="mb-4">
-//             <label className="block mb-2">Status:</label>
-//             <input
-//               type="text"
-//               value={user.status}
-//               onChange={(e) => setUser({ ...user, status: e.target.value })}
-//               className="border border-gray-300 px-3 py-2 rounded-md w-full"
-//             />
-//           </div>
-//           <button
-//             type="submit"
-//             className="bg-blue-500 text-white px-4 py-2 rounded-md"
-//           >
-//             Update
-//           </button>
-//         </form>
-//       </div>
-//     );
-//   };
-
-//   UserUpdate.getInitialProps = ({ query }) => {
-//     return { id: query.userId };
-//   };
-// };
-// export default UserUpdate;
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
@@ -351,9 +11,11 @@ const UserUpdate = ({ id }) => {
   const [role, setRole] = useState("user");
   const [status, setStatus] = useState(false);
   const [error, setError] = useState("");
+
   const handleToggle = () => {
     setStatus(!status);
   };
+
   useEffect(() => {
     const fetchUser = async () => {
       try {
@@ -368,28 +30,6 @@ const UserUpdate = ({ id }) => {
     fetchUser();
   }, [id]);
 
-  // const handleUpdateUser = async (e) => {
-  //   e.preventDefault();
-
-  //   try {
-  //     const response = await fetch(`http://localhost:3004/users/${id}`, {
-  //       method: "PUT",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(user),
-  //     });
-
-  //     if (response.ok) {
-  //       console.log("User updated successfully");
-  //       router.push("/userlist");
-  //     } else {
-  //       console.error("Error updating user");
-  //     }
-  //   } catch (error) {
-  //     console.error("Error updating user:", error);
-  //   }
-  // };
   const handleUpdateUser = (userId) => {
     const updatedUser = {
       id: userId,
@@ -413,6 +53,7 @@ const UserUpdate = ({ id }) => {
         } else {
           console.log("Error updating user");
         }
+        router.push("/userlist");
       })
       .catch((error) => {
         console.log("Server error", error);
@@ -438,7 +79,6 @@ const UserUpdate = ({ id }) => {
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:border-blue-300"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              required
             />
           </div>
           <div className="mb-4">
@@ -448,7 +88,6 @@ const UserUpdate = ({ id }) => {
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:border-blue-300"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
             />
           </div>
           <div className="mb-4">
@@ -458,7 +97,6 @@ const UserUpdate = ({ id }) => {
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:border-blue-300"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              required
             />
           </div>
           <div className="mb-4">
@@ -468,7 +106,6 @@ const UserUpdate = ({ id }) => {
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:border-blue-300"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              required
             />
           </div>
           <div className="mb-4">
@@ -492,7 +129,7 @@ const UserUpdate = ({ id }) => {
                 checked={status}
                 onChange={handleToggle}
               />
-              <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+              <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300  rounded-full peer  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all  peer-checked:bg-blue-600"></div>
               <span className="ml-3 text-sm font-medium text-gray-900">
                 {status ? "Active" : "Inactive"}
               </span>
