@@ -5,7 +5,7 @@ import logo from "@/public/assets/malwation-logo-2.png";
 function Header() {
   return (
     <header>
-      <nav className="flex fixed w-full bg-white items-center text-center justify-around">
+      <nav className="flex fixed w-full bg-white items-center text-center justify-around top-0">
         <div className="p-3">
           <a href="/" className="flex items-center">
             <Image src={logo} width={40} height={40} alt="Malwation logo" />

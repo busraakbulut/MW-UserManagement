@@ -11,7 +11,6 @@ const Registration = () => {
   const [phone, setPhone] = useState("");
   const [role, setRole] = useState("user");
   const [status, setStatus] = useState(false);
-  const [error, setError] = useState("");
 
   const handleToggle = () => {
     setStatus(!status);
@@ -20,6 +19,7 @@ const Registration = () => {
     const url = "http://localhost:3004/users";
     const response = await fetch(url);
     const data = await response.json();
+    console.log(data);
     return data;
   }
 
@@ -130,7 +130,7 @@ const Registration = () => {
             </div>
             <button
               type="submit"
-              className=" bg-blue-500 text-white py-2 px-4 m-5 rounded-md hover:bg-blue-700"
+              className=" bg-blue-500 text-white py-2 px-4 my-2 rounded-md hover:bg-blue-700"
             >
               Register
             </button>

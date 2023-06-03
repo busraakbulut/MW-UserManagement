@@ -1,5 +1,5 @@
-import UserUpdate from "@/components/UserUpdate/Update";
-import Sidebar from "@/components/UserList/Sidebar/Sidebar";
+import Sidebar from "@/components/Sidebar/Sidebar";
+import UserUpdate from "@/components/Update/UserUpdate";
 
 function UserUpdateContainer() {
   return (

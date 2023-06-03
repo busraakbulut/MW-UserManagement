@@ -10,7 +10,6 @@ const UserList = () => {
     fetch("http://localhost:3004/users")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setUserCards(data);
       })
       .catch((error) => console.log(error));
@@ -34,38 +33,48 @@ const UserList = () => {
   };
 
   const handleEditUser = (userId) => {
-    router.push(`/update?id=${userId}`);
+    router.push(`/update/${userId}`);
   };
 
   return (
-    <div className="container mx-auto">
-      <h1 className="text-3xl">User List</h1>
-      <div className=" text-gray-700 p-3">
-        <table className="items-center bg-white w-full border-collapse table-header-group">
-          <thead className="text-sm uppercase">
-            <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Phone</th>
-              <th>Role</th>
-              <th>Status</th>
-              <th>Delete</th>
-              <th>Edit</th>
-            </tr>
-          </thead>
-          <tbody className="items-center text-center gap-4 table-row-group">
-            {userCards.map((user) => (
-              <UserCard
-                key={user.id}
-                user={user}
-                index={userCards.indexOf(user)}
-                handleDeleteUser={handleDeleteUser}
-                handleEditUser={handleEditUser}
-              />
-            ))}
-          </tbody>
-        </table>
-      </div>
+    <div className="flex flex-wrap">
+      {/* Sidebar */}
+      <aside className="w-full md:w-1/4 lg:w-1/6 bg-gray-100 border-r border-gray-300">
+        {/* Sidebar content */}
+        {/* ... */}
+      </aside>
+
+      {/* User List */}
+      <main className="w-full md:w-3/4 lg:w-5/6 p-8">
+        <h1 className="text-3xl text-center mb-5">User List</h1>
+
+        <div className="overflow-x-auto">
+          <table className="w-full bg-white table-fixed">
+            <thead>
+              <tr>
+                <th className="w-1/6">Name</th>
+                <th className="w-1/6">Email</th>
+                <th className="w-1/6">Phone</th>
+                <th className="w-1/6">Role</th>
+                <th className="w-1/6">Status</th>
+                <th className="w-1/6">Delete</th>
+                <th className="w-1/6">Edit</th>
+              </tr>
+            </thead>
+            <tbody>
+              {userCards.map((user) => (
+                <UserCard
+                  key={user.id}
+                  user={user}
+                  index={userCards.indexOf(user)}
+                  handleDeleteUser={handleDeleteUser}
+                  handleEditUser={handleEditUser}
+                />
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </main>
     </div>
   );
 };

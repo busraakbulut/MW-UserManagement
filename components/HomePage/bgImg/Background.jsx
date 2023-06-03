@@ -9,7 +9,7 @@ function BackgroundImage({ children }) {
 
   return (
     <div>
-      <div className="w-full h-full">
+      <div className="bg-cover bg-no-repeat max-w-full min-h-screen overflow-hidden">
         <Image
           src={bgimg}
           alt="bg"

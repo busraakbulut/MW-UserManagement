@@ -1,11 +1,20 @@
 {
   "users": [
     {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "123890",
+      "phone": "1234567890",
+      "role": "user",
+      "status": "active"
+    },
+    {
       "id": 2,
       "name": "Dude Smith",
       "email": "Dude@example.com",
       "phone": "9876543210",
-      "role": "admin",
+      "role": "manager",
       "status": "inactive"
     },
     {
@@ -14,7 +23,7 @@
       "email": "jane@example.com",
       "password": "123890",
       "phone": "9876543210",
-      "role": "admin",
+      "role": "user",
       "status": "inactive"
     },
     {
@@ -23,7 +32,7 @@
       "email": "Mary@example.com",
       "password": "123890",
       "phone": "9876543210",
-      "role": "admin",
+      "role": "manager",
       "status": "inactive"
     },
     {
@@ -32,44 +41,8 @@
       "email": "Jane@example.com",
       "password": "123890",
       "phone": "9876543210",
-      "role": "admin",
-      "status": "active"
-    },
-    {
-      "id": "bf82ba79-8f09-44ee-a604-998119efeca6",
-      "name": "ab",
-      "email": "ab@kdjls",
-      "password": "fsdsd",
-      "phone": "1321",
-      "role": "user",
-      "status": false
-    },
-    {
-      "id": "ea007904-a07d-4e67-860c-eedb8ef237fd",
-      "name": "şlkşsd",
-      "email": "john@example.com",
-      "password": "şdsl",
-      "phone": "dsfd",
-      "role": "user",
-      "status": false
-    },
-    {
-      "id": "d6af3ff2-df56-4aa0-98de-5942d24b2fa7",
-      "name": "abd",
-      "email": "ab@kdsjlsd",
-      "password": "dlskjd",
-      "phone": "dsfsd",
-      "role": "user",
-      "status": false
-    },
-    {
-      "id": "2f0f812c-9df7-4320-9ac9-ae6643987ef7",
-      "name": "abc",
-      "email": "dn@nd",
-      "password": "dlşf",
-      "phone": "13235",
-      "role": "admin",
-      "status": true
+      "role": "manager",
+      "status": "inactive"
     }
   ]
 }

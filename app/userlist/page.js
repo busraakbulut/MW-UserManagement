@@ -1,9 +1,10 @@
+import UserDashboardContainer from "@/container/UserDashboard";
 import React from "react";
-import UserListContainer from "@/container/UserList";
+
 function UserList() {
   return (
-    <div className="bg" >
-      <UserListContainer />
+    <div>
+      <UserDashboardContainer/>
     </div>
   );
 }
