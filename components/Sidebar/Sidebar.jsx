@@ -18,7 +18,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="w-16 md:w-1/4 lg:w-1/6 bg-white border-r border-gray-300 fixed h-screen top-0 left-0">
+    <aside className="w-16 md:w-1/4 lg:w-1/6 bg-white border-r border-gray-300 fixed h-screen top-16 left-0">
       <div className="border border-gray-300 rounded-sm">
         <button
           className="flex justify-between w-full p-4"

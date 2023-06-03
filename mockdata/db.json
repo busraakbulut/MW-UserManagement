@@ -36,13 +36,13 @@
       "status": "inactive"
     },
     {
-      "id": 5,
-      "name": "Jane Doe",
-      "email": "Jane@example.com",
-      "password": "123890",
-      "phone": "9876543210",
-      "role": "manager",
-      "status": "inactive"
+      "id": "31dabc86-af1b-4f02-8f1e-f28520eeaa76",
+      "name": "emre çay",
+      "email": "emre@example.com",
+      "password": "emre",
+      "phone": "132564",
+      "role": "admin",
+      "status": false
     }
   ]
 }
