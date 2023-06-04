@@ -43,6 +43,24 @@
       "phone": "9876543210",
       "role": "admin",
       "status": "active"
+    },
+    {
+      "id": "29f65058-0b1e-4496-bd98-b5d227a0276d",
+      "name": "ali ali",
+      "email": "ali@example.com",
+      "password": "ali",
+      "phone": "123456",
+      "role": "admin",
+      "status": "inactive"
+    },
+    {
+      "id": "1c15d107-774e-49ae-90a5-f85de145ab1e",
+      "name": "başak başbak",
+      "email": "basak@example.com",
+      "password": "basak",
+      "phone": "6546123189",
+      "role": "user",
+      "status": ""
     }
   ]
 }
