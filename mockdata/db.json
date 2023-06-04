@@ -89,6 +89,15 @@
       "phone": "1234567890",
       "role": "admin",
       "status": "inactive"
+    },
+    {
+      "id": "eaaa2692-c2f9-447e-b5db-c3e16e12082b",
+      "name": "büşra akbulut",
+      "email": "busra@example.com",
+      "password": "busra",
+      "phone": "03215468545",
+      "role": "admin",
+      "status": "active"
     }
   ]
 }

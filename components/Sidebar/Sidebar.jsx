@@ -18,7 +18,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="flex w-16 sm:w-full md:w-1/4 lg:w-1/6 bg-white border border-gray-300 fixed h-screen top-14 left-0  shadow-sm shadow-blue-600">
+    <div className="flex max-w-lg sm:w-1/4 lg:w-1/6 bg-white border border-gray-300 fixed h-screen top-14 left-0  shadow-sm shadow-blue-600">
       <div>
         <button
           className="flex justify-between w-full p-4"

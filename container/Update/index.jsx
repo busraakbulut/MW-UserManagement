@@ -3,10 +3,10 @@ import UserUpdate from "@/components/Update/UserUpdate";
 
 function UserUpdateContainer() {
   return (
-    <>
+    <div>
       <Sidebar />
       <UserUpdate />
-    </>
+    </div>
   );
 }
 

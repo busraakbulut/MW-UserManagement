@@ -19,10 +19,10 @@ function UserCard({ user, handleDeleteUser, index, handleEditUser }) {
   };
   return (
     <tr className={index % 2 === 0 ? "bg-white" : "bg-gray-300"}>
-      <td className="p-3 first-letter:uppercase ">{user.name}</td>
+      <td className="p-3 text-transform: capitalize ">{user.name}</td>
       <td className="p-3 ">{user.email}</td>
       <td className="p-3 ">{user.phone}</td>
-      <td className="p-3 first-letter:uppercase ">{user.role}</td>
+      <td className="p-3 first-letter:uppercase">{user.role}</td>
       <td className="p-3">{StatusIcons()}</td>
       <td className="flex p-3">
         <button className="p-3" onClick={() => handleDeleteUser(user.id)}>
