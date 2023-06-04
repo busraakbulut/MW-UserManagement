@@ -1,129 +1,94 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "John Doe",
-      "email": "john@example.com",
-      "password": "123890",
-      "phone": "1234567890",
-      "role": "user",
-      "status": "active"
-    },
-    {
-      "id": 2,
-      "name": "Dude Smith",
-      "email": "Dude@example.com",
-      "phone": "9876543210",
-      "role": "admin",
-      "status": "inactive"
-    },
-    {
-      "id": 3,
-      "name": "Jane Smith",
-      "email": "jane@example.com",
-      "password": "123890",
-      "phone": "9876543210",
-      "role": "admin",
-      "status": "inactive"
-    },
-    {
-      "id": 4,
-      "name": "Mary Smith",
-      "email": "Mary@example.com",
-      "password": "123890",
-      "phone": "9876543210",
-      "role": "admin",
-      "status": "active"
-    },
-    {
-      "id": 5,
-      "name": "Jane Doe",
-      "email": "Jane@example.com",
-      "password": "123890",
-      "phone": "9876543210",
-      "role": "admin",
-      "status": "active"
-    },
-    {
-      "id": "29f65058-0b1e-4496-bd98-b5d227a0276d",
-      "name": "ali ali",
-      "email": "ali@example.com",
-      "password": "ali",
-      "phone": "123456",
-      "role": "admin",
-      "status": "inactive"
-    },
-    {
-      "id": "0c4acf6a-d654-4f84-a9e9-fd55add55617",
-      "name": "a",
-      "email": "a@a",
-      "password": "a",
-      "phone": "1",
-      "role": "user",
-      "status": "active"
-    },
-    {
-      "id": "71ee243f-767d-4e48-91a5-0f4609c26a18",
-      "name": "b",
-      "email": "b@b",
-      "password": "b",
-      "phone": "1",
-      "role": "user",
-      "status": "inactive"
-    },
-    {
-      "id": "6beb4774-5aa7-4714-87f1-6d263f95f433",
-      "name": "c",
-      "email": "a@c",
-      "password": "a",
-      "phone": "43215",
-      "role": "manager",
-      "status": "inactive"
-    },
-    {
-      "id": "4d4f0a1d-268d-4a57-9cc0-c89df59de377",
-      "name": "a",
-      "email": "a@d",
-      "password": "a",
-      "phone": "215",
-      "role": "user",
-      "status": "active"
-    },
-    {
       "id": "e5a43d69-9af7-4834-a90e-aa9813089466",
-      "name": "abcde abcde",
-      "email": "abcde@abcde",
-      "password": "abcde",
-      "phone": "123456",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "password": "johndoe",
+      "phone": "1234567890",
+      "role": "manager",
+      "status": "active"
+    },
+    {
+      "id": "e5a43d69-9af7-4834-a90e-aa9813089467",
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "password": "janesmith",
+      "phone": "9876543210",
+      "role": "admin",
+      "status": "inactive"
+    },
+    {
+      "id": "e5a43d69-9af7-4834-a90e-aa9813089468",
+      "name": "Robert Johnson",
+      "email": "robertjohnson@example.com",
+      "password": "robertjohnson",
+      "phone": "5551234567",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "id": "e5a43d69-9af7-4834-a90e-aa9813089469",
+      "name": "Michael Brown",
+      "email": "michaelbrown@example.com",
+      "password": "michaelbrown",
+      "phone": "1234567890",
       "role": "manager",
       "status": "inactive"
     },
     {
-      "id": "6fd59695-8390-4336-a24c-768d54a91ab6",
-      "name": "batuhan",
-      "email": "batuhan@example.com",
-      "password": "batuhan",
-      "phone": "123456",
+      "id": "e5a43d69-9af7-4834-a90e-aa9813089470",
+      "name": "Sarah Davis",
+      "email": "sarahdavis@example.com",
+      "password": "sarahdavis",
+      "phone": "9876543210",
+      "role": "admin",
+      "status": "active"
+    },
+    {
+      "id": "e5a43d69-9af7-4834-a90e-aa9813089471",
+      "name": "Christopher Wilson",
+      "email": "christopherwilson@example.com",
+      "password": "christopherwilson",
+      "phone": "5551234567",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "id": "e5a43d69-9af7-4834-a90e-aa9813089472",
+      "name": "David Thompson",
+      "email": "davidthompson@example.com",
+      "password": "davidthompson",
+      "phone": "1234567890",
+      "role": "manager",
+      "status": "inactive"
+    },
+    {
+      "id": "e5a43d69-9af7-4834-a90e-aa9813089473",
+      "name": "Amanda Green",
+      "email": "amandagreen@example.com",
+      "password": "amandagreen",
+      "phone": "9876543210",
+      "role": "admin",
+      "status": "active"
+    },
+    {
+      "id": "e5a43d69-9af7-4834-a90e-aa9813089474",
+      "name": "Matthew Roberts",
+      "email": "matthewroberts@example.com",
+      "password": "matthewroberts",
+      "phone": "5551234567",
       "role": "user",
       "status": "inactive"
     },
     {
-      "id": "0f958483-cd4d-4ca0-a571-11c53a34b860",
-      "name": "abcd",
-      "email": "abcd@abcd",
-      "password": "abcd",
-      "phone": "1231456",
+      "id": "e5a43d69-9af7-4834-a90e-aa9813089475",
+      "name": "Jennifer Hall",
+      "email": "jenniferhall@example.com",
+      "password": "jenniferhall",
+      "phone": "1234567890",
       "role": "admin",
-      "status": "false"
-    },
-    {
-      "id": "ba202a96-cd82-4836-955e-3c34b4fda4ab",
-      "name": "abcd",
-      "email": "abcde@lkdsjld",
-      "password": "kljdff",
-      "phone": "32135",
-      "role": "admin",
-      "status": false
+      "status": "inactive"
     }
   ]
 }

@@ -2,6 +2,7 @@
 
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import InputField from "../Input/Input";
 
 const UserUpdate = () => {
   const router = useRouter();
@@ -33,36 +34,34 @@ const UserUpdate = () => {
     <div className="md:w-1/3 mx-auto mt-52">
       <h1 className="text-2xl text-center font-bold mb-4">User Update</h1>
       <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label className="block mb-2">Name:</label>
-          <input
-            type="text"
-            value={user?.name}
-            onChange={handleChanges}
-            name="name"
-            className="border border-gray-300 px-3 py-2 rounded-md w-full"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block mb-2">Email:</label>
-          <input
-            type="email"
-            value={user?.email}
-            onChange={handleChanges}
-            name="email"
-            className="border border-gray-300 px-3 py-2 rounded-md w-full"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block mb-2">Phone:</label>
-          <input
-            type="text"
-            value={user?.phone}
-            onChange={handleChanges}
-            name="phone"
-            className="border border-gray-300 px-3 py-2 rounded-md w-full"
-          />
-        </div>
+        <InputField
+          label="Name "
+          type="text"
+          name="name"
+          value={user?.name}
+          onChange={handleChanges}
+        />
+        <InputField
+          label="Email "
+          type="email"
+          name="email"
+          value={user?.email}
+          onChange={handleChanges}
+        />
+        <InputField
+          label="Password "
+          type="password"
+          name="password"
+          value={user?.password}
+          onChange={handleChanges}
+        />
+        <InputField
+          label="Phone "
+          type="number"
+          name="phone"
+          value={user?.phone}
+          onChange={handleChanges}
+        />
 
         <div className="mb-4">
           <label className="block mb-2">Role:</label>
@@ -85,8 +84,8 @@ const UserUpdate = () => {
             onChange={handleChanges}
             name="status"
           >
-            <option value={Boolean(true)}>Active</option>
-            <option value={Boolean(false)}>Inactive</option>
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
           </select>
         </div>
         <button

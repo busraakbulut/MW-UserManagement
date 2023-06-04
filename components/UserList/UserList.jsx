@@ -37,21 +37,20 @@ const UserList = () => {
   };
 
   return (
-    <div className="grid place-items-center m-44 p-10">
+    <div className="grid place-items-center">
       <div className="container md:w-3/4 sm:w-full text-center">
         <h1 className="text-3xl pb-5">Users List</h1>
 
         <div className="overflow-x-auto border shadow-lg shadow-blue-200">
           <table>
-            <thead className="bg-gray-300  ">
+            <thead className="bg-gray-400  ">
               <tr className="h-10">
-                <th className="w-1/6 ">Name</th>
-                <th className="w-1/6 ">Email</th>
-                <th className="w-1/6 ">Phone</th>
-                <th className="w-1/6 ">Role</th>
-                <th className="w-1/6 ">Status</th>
-                <th className="w-1/6 ">Delete</th>
-                <th className="w-1/6 ">Edit</th>
+                <th className="w-1/3 ">Name</th>
+                <th className="w-1/3 ">Email</th>
+                <th className="w-1/3 ">Phone</th>
+                <th className="w-auto ">Role</th>
+                <th className="w-auto ">Status</th>
+                <th className="w-auto ">Actions </th>
               </tr>
             </thead>
             <tbody>
