@@ -12,7 +12,7 @@ yarn dev
 pnpm dev
 ```
 
-Open [[http://localhost:3000](https://user-management-system-phi.vercel.app/)]([http://localhost:3000](https://user-management-system-phi.vercel.app/)) with your browser to see the result.
+Open [https://busraakbulut-mw-user-management.vercel.app/](https://busraakbulut-mw-user-management.vercel.app/) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
