@@ -4,7 +4,7 @@ import React from 'react'
 
 function Update() {
   return (
-    <div className='bg'>
+    <div>
         <UserUpdateContainer/>
     </div>
   )

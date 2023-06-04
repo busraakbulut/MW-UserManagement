@@ -37,7 +37,7 @@ const UserList = () => {
   };
 
   return (
-    <div className="grid place-items-center m-52 p-10">
+    <div className="grid place-items-center m-44 p-10">
       <div className="container md:w-3/4 sm:w-full text-center">
         <h1 className="text-3xl pb-5">Users List</h1>
 

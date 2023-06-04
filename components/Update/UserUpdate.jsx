@@ -7,7 +7,7 @@ const UserUpdate = () => {
   const router = useRouter();
   const [user, setUser] = useState({});
   const params = useParams();
-  const [status, setStatus] = useState([]);
+  const [status, setStatus] = useState();
   useEffect(() => {
     fetch(`http://localhost:3004/users/${params?.id}`)
       .then((res) => res.json())
@@ -16,6 +16,7 @@ const UserUpdate = () => {
 
   const handleChanges = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
+    console.log(typeof e.target.value);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -84,8 +85,8 @@ const UserUpdate = () => {
             onChange={handleChanges}
             name="status"
           >
-            <option value="active">Active</option>
-            <option value="inactive">Inactive</option>
+            <option value={Boolean(true)}>Active</option>
+            <option value={Boolean(false)}>Inactive</option>
           </select>
         </div>
         <button
