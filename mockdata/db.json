@@ -7,14 +7,14 @@
       "password": "123890",
       "phone": "1234567890",
       "role": "user",
-      "status": "inactive"
+      "status": "active"
     },
     {
       "id": 2,
       "name": "Dude Smith",
       "email": "Dude@example.com",
       "phone": "9876543210",
-      "role": "manager",
+      "role": "admin",
       "status": "inactive"
     },
     {
@@ -23,7 +23,7 @@
       "email": "jane@example.com",
       "password": "123890",
       "phone": "9876543210",
-      "role": "user",
+      "role": "admin",
       "status": "inactive"
     },
     {
@@ -32,17 +32,17 @@
       "email": "Mary@example.com",
       "password": "123890",
       "phone": "9876543210",
-      "role": "manager",
+      "role": "admin",
       "status": "inactive"
     },
     {
-      "id": "31dabc86-af1b-4f02-8f1e-f28520eeaa76",
-      "name": "emre çay",
-      "email": "emre@example.com",
-      "password": "emre",
-      "phone": "132564",
+      "id": 5,
+      "name": "Jane Doe",
+      "email": "Jane@example.com",
+      "password": "123890",
+      "phone": "9876543210",
       "role": "admin",
-      "status": false
+      "status": "active"
     }
   ]
 }

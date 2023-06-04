@@ -27,12 +27,10 @@ const UserUpdate = () => {
       body: JSON.stringify(user),
     }).then(() => router.push("/userlist"));
   };
-  function handleToggle() {
-    setStatus(!status);
-  }
+
   return (
-    <div className="max-w-md mx-auto mt-8">
-      <h1 className="text-2xl font-bold mb-4">User Update</h1>
+    <div className="md:w-1/3 mx-auto mt-52">
+      <h1 className="text-2xl text-center font-bold mb-4">User Update</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block mb-2">Name:</label>

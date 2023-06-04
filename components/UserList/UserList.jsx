@@ -37,28 +37,21 @@ const UserList = () => {
   };
 
   return (
-    <div className="flex flex-wrap">
-      {/* Sidebar */}
-      <aside className="w-full md:w-1/4 lg:w-1/6 bg-gray-100 border-r border-gray-300">
-        {/* Sidebar content */}
-        {/* ... */}
-      </aside>
+    <div className="grid place-items-center m-52 p-10">
+      <div className="container md:w-3/4 sm:w-full text-center">
+        <h1 className="text-3xl pb-5">Users List</h1>
 
-      {/* User List */}
-      <main className="w-full md:w-3/4 lg:w-5/6 p-8">
-        <h1 className="text-3xl text-center mb-5">User List</h1>
-
-        <div className="overflow-x-auto">
-          <table className="w-full bg-white table-fixed">
-            <thead>
-              <tr>
-                <th className="w-1/6">Name</th>
-                <th className="w-1/6">Email</th>
-                <th className="w-1/6">Phone</th>
-                <th className="w-1/6">Role</th>
-                <th className="w-1/6">Status</th>
-                <th className="w-1/6">Delete</th>
-                <th className="w-1/6">Edit</th>
+        <div className="overflow-x-auto border shadow-lg shadow-blue-200">
+          <table>
+            <thead className="bg-gray-300  ">
+              <tr className="h-10">
+                <th className="w-1/6 ">Name</th>
+                <th className="w-1/6 ">Email</th>
+                <th className="w-1/6 ">Phone</th>
+                <th className="w-1/6 ">Role</th>
+                <th className="w-1/6 ">Status</th>
+                <th className="w-1/6 ">Delete</th>
+                <th className="w-1/6 ">Edit</th>
               </tr>
             </thead>
             <tbody>
@@ -74,7 +67,7 @@ const UserList = () => {
             </tbody>
           </table>
         </div>
-      </main>
+      </div>
     </div>
   );
 };

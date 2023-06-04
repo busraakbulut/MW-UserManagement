@@ -18,13 +18,13 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="w-16 md:w-1/4 lg:w-1/6 bg-white border-r border-gray-300 fixed h-screen top-14 left-0">
-      <div className="border border-gray-300 rounded-sm">
+    <div className="w-16 md:w-1/4 lg:w-1/6 bg-white border border-gray-300 fixed h-screen top-14 left-0  shadow-sm shadow-blue-600">
+      <div className="">
         <button
           className="flex justify-between w-full p-4"
           onClick={toggleAccordion}
         >
-          <span className="font-medium">User Management</span>
+          <span className="font-medium ">User Management</span>
           {isOpen ? (
             <ChevronUpIcon className="h-5 w-5 text-gray-500" />
           ) : (
@@ -61,7 +61,7 @@ const Sidebar = () => {
           Log Out
         </span>
       </div>
-    </aside>
+    </div>
   );
 };
 
