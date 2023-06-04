@@ -7,7 +7,7 @@
       "password": "123890",
       "phone": "1234567890",
       "role": "user",
-      "status": "active"
+      "status": "inactive"
     },
     {
       "id": 2,
