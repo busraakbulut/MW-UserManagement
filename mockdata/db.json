@@ -61,6 +61,42 @@
       "phone": "6546123189",
       "role": "user",
       "status": ""
+    },
+    {
+      "id": "40f6024a-7b97-4366-968c-7edcb62c6956",
+      "name": "abc",
+      "email": "abc@abc",
+      "password": "1321",
+      "phone": "2365",
+      "role": "user",
+      "status": ""
+    },
+    {
+      "id": "cae0fbf5-b800-4524-8a01-fd6944e2f935",
+      "name": "busra akbulut",
+      "email": "busra@busra",
+      "password": "busra",
+      "phone": "312365",
+      "role": "user",
+      "status": ""
+    },
+    {
+      "id": "0c4acf6a-d654-4f84-a9e9-fd55add55617",
+      "name": "a",
+      "email": "a@a",
+      "password": "a",
+      "phone": "1",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "id": "71ee243f-767d-4e48-91a5-0f4609c26a18",
+      "name": "b",
+      "email": "b@b",
+      "password": "b",
+      "phone": "1",
+      "role": "user",
+      "status": "inactive"
     }
   ]
 }
