@@ -33,7 +33,7 @@ const Login = () => {
   return (
     <div className="container m-auto">
       <div>
-        <div className="flex sm:flex-col justify-center md:flex-row-reverse pt-52">
+        <div className="flex sm:flex-col justify-center md:flex-row-reverse pt-44">
           <div className="flex w-full md:w-3/6 justify-center items-center p-32 ">
             <form
               className="p-6 w-full  bg-white shadow-2xl shadow-blue-700 rounded-md "
@@ -45,7 +45,7 @@ const Login = () => {
                 type="email"
                 name="email"
                 value={email}
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
 

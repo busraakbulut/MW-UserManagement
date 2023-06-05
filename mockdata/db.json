@@ -2,12 +2,12 @@
   "users": [
     {
       "id": "e5a43d69-9af7-4834-a90e-aa9813089466",
-      "name": "John Doe",
+      "name": "John joe",
       "email": "johndoe@example.com",
       "password": "johndoe",
-      "phone": "1234567890",
-      "role": "manager",
-      "status": "active"
+      "phone": "123456789",
+      "role": "user",
+      "status": "inactive"
     },
     {
       "id": "e5a43d69-9af7-4834-a90e-aa9813089467",
@@ -91,12 +91,12 @@
       "status": "inactive"
     },
     {
-      "id": "eaaa2692-c2f9-447e-b5db-c3e16e12082b",
-      "name": "büşra akbulut",
-      "email": "busra@example.com",
-      "password": "busra",
-      "phone": "03215468545",
-      "role": "admin",
+      "id": "64756000-6af9-48c6-a778-5eeb067281fe",
+      "name": "emre çay",
+      "email": "emre@example.com",
+      "password": "emre",
+      "phone": "215453132",
+      "role": "user",
       "status": "active"
     }
   ]
