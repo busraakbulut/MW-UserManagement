@@ -37,11 +37,11 @@ const UserList = () => {
   };
 
   return (
-    <div className="grid place-items-center">
-      <div className="container md:w-3/4 sm:w-full text-center">
+    <div className=" grid h-screen place-items-center mx-56 mt-32 ">
+      <div className="md:w-3/4 sm:w-1/2 min-w-md text-center">
         <h1 className="text-3xl pb-5">Users List</h1>
 
-        <div className="overflow-x-auto border shadow-lg shadow-blue-200">
+        <div className=" border shadow-lg shadow-blue-200">
           <table>
             <thead className="bg-gray-400  ">
               <tr className="h-10">

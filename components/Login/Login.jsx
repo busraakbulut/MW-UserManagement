@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 
 import Image from "next/image";
 import login from "@/public/assets/login.png";
+import InputField from "../Input/Input";
 
 const Login = () => {
   const router = useRouter();
@@ -32,34 +33,30 @@ const Login = () => {
   return (
     <div className="container m-auto">
       <div>
-        <div className="flex flex-col justify-center md:flex-row-reverse ">
-          <div className="flex w-full md:w-3/6 justify-center items-center p-32 md:m-24">
+        <div className="flex sm:flex-col justify-center md:flex-row-reverse pt-52">
+          <div className="flex w-full md:w-3/6 justify-center items-center p-32 ">
             <form
               className="p-6 w-full  bg-white shadow-2xl shadow-blue-700 rounded-md "
               onSubmit={handleLogin}
             >
               <h2 className="text-3xl font-semibold mb-6">Login Page</h2>
-              <div className="mb-4">
-                <label className="block mb-2">Email:</label>
-                <input
-                  type="email"
-                  className="w-full border border-gray-300 rounded-md px-3 py-2  focus:outline-none focus:ring focus:border-blue-300 leading-tight"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-              </div>
+              <InputField
+                label="Email"
+                type="email"
+                name="email"
+                value={email}
+                onChange={(e) => setName(e.target.value)}
+                required
+              />
 
-              <div className="mb-4">
-                <label className="block mb-1">Password:</label>
-                <input
-                  type="password"
-                  className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:border-blue-300"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                />
-              </div>
+              <InputField
+                label="Password"
+                type="password"
+                name="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
 
               <div className="flex items-center justify-between">
                 <div className="flex items-center h-5 ">
@@ -103,7 +100,7 @@ const Login = () => {
               </div>
             </form>
           </div>
-          <div className=" flex w-full md:w-3/6 justify-center items-center p-32 md:p-20">
+          <div className=" flex sm:felx-col w-full md:w-3/6 justify-center items-center p-32 md:p-20">
             <Image src={login} alt="login image" />
           </div>
         </div>

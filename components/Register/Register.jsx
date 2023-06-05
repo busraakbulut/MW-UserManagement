@@ -54,10 +54,10 @@ const Registration = () => {
 
   return (
     <div className="container mx-auto ">
-      <div className="flex flex-col justify-center md:flex-row-reverse  ">
-        <div className="flex w-full md:w-3/6 justify-center items-center p-20 md:p-36">
+      <div className="flex flex-col-reverse md:flex-row items-center gap-10">
+        <div className="w-full md:w-3/6">
           <form
-            className="p-6 w-full   bg-white shadow-2xl shadow-blue-700 rounded-md "
+            className="p-6 w-full bg-white shadow-2xl shadow-blue-700 rounded-md "
             onSubmit={handleRegistration}
           >
             <h2 className="text-2xl font-semibold mb-6">Registration</h2>
@@ -128,7 +128,7 @@ const Registration = () => {
             </button>
           </form>
         </div>
-        <div className="flex w-full md:w-3/6 justify-center items-center p-20 md:p-36">
+        <div className="w-full md:w-3/6">
           <Image src={register} alt="register image" />
         </div>
       </div>

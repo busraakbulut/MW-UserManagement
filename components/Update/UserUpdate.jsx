@@ -31,7 +31,7 @@ const UserUpdate = () => {
   };
 
   return (
-    <div className="sm:w-1/3 max-w-sm mx-auto mt-52">
+    <div className="max-w-sm w-3/6 mx-auto mt-52">
       <h1 className="text-2xl text-center font-bold mb-4">User Update</h1>
       <form onSubmit={handleSubmit}>
         <InputField
